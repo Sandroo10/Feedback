@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --accent-color: #aa4a41;
+    --border-r: 4px
+  }
+  
+  body {
+    background-repeat: repeat;
+    background-position: center center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  form{
+      padding: 20px;
+      margin: 30px;
+  }
+  
+  .survey-wrapper {
+   
+    background-color: rgb(205, 177, 229);
+    width: 60%;
+    height: fit-content;
+    border-radius: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .survey-header {
+    font-size: 2rem;
+  
+    font-weight: 400;
+  }
+  
+  .survey-fields, .each-field, .dropdown-field, .radio-section{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .each-field {
+    text-align: center;
+    gap: 3px;
+  }
+  
+  .survey-fields{
+      gap: 20px;
+  
+  }
+  
+  
+  .dropdown-field{
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+  
+  }
+  .radio-section > div, .values-field >  div{
+      display: flex;
+      justify-content: space-around;
+  }
+  .radio-section > div > div,  .values-field > div > div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      gap: 5px;
+  }
+  
+  
+  .radio-section input, .values-field input{
+      outline: none !important;
+      width: 20px;
+  }
+  
+  .dropdown-field select{
+      width: 80%;
+      border: none;
+  }
+  
+  
+  .submit-btn{
+      border: none;
+      background-color:black;
+      color: white;
+      width: 130px;
+      cursor: pointer;
+      height: 40px;
+      transition: all 300ms linear;;
+  }
+  
+  .submit-btn:hover{
+      opacity: 0.95;
+  }
+  
+  .thoughts {
+    height: 100px;
+    vertical-align: top;
+    padding: 10px; 
+    resize: none;
+    box-sizing: border-box; 
+}
+
+  
+  ::placeholder{
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  span {
+      color: var(--accent-color)
+  }
+  
+  input {
+    border-radius: var(--border-r);;
+    border: none;
+    height: 30px;
+    width: 100%;
+  }
+  input::placeholder{
+      font-size: 12px;
+  }
+  

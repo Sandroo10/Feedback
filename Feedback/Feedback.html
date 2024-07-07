@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./Feedback.css" type="text/css" />
+</head>
+<body>
+    <form class="survey-wrapper">
+        <h1 style="color: white;">Feedback</h1>
+        <h3 style="color: white;">Fill up the form below for the future</h3>
+        <div class="survey-fields">
+          <div class="each-field">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name e.g. Sandro Saralidze"
+              required
+            />
+          </div>
+          <div class="each-field">
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Email, e.g. ragaca@company.com"
+              required
+            />
+          </div>
+  
+          <div class="dropdown-field">
+            <select id="satisfaction" required>
+              <option selected disabled hidden>Where did you find about us?</option>
+              <option>Ads</option>
+              <option>From a friend</option>
+              <option>Facebook</option>
+            </select>
+          </div>
+  
+          <div class="radio-section">
+            <label class="question" style="color: white;">Age</label>
+  
+            <div>
+              <div>
+                <input type="radio" name="change" id="staff" />
+                <label style="color: white;">13-16</label>
+              </div>
+              <div>
+                <input type="radio" name="change" id="CEO" />
+                <label style="color: white;">16-25</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="change" id="marketing" />
+                <label style="color: white;">25+</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="values-field">
+            <label class="question" style="color: white;">Where would you like to se out advertisments?</label>
+            <div class="value-boxes">
+              <div>
+                <input type="checkbox" id="responsibility" />
+                <label for="responsibility" style="color: white;">Instagram</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" />
+                <label for="time" style="color: white;">TikTok</label>
+              </div>
+              <div>
+                <input type="checkbox" id="time" />
+                <label for="time" style="color: white;">TV</label>
+              </div>
+            </div>
+          </div>
+          <div class="each-field">
+            <textarea class="thoughts" name="thoughts" placeholder="Leave your thoughts..." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+</body>
+</html>
